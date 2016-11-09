@@ -10,9 +10,12 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    var abc = LocationManager();
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        abc.getAuthor();
+        abc.checkLocation();
     }
 
     override func didReceiveMemoryWarning() {
